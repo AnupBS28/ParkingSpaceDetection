@@ -20,7 +20,161 @@
             android:layout_height="match_parent"
             android:layout_gravity="start"
             android:fitsSystemWindows="true"
-            app:headerLayout="@layout/nav_header_main"
-            app:menu="@menu/activity_main_drawer"/>
+    >
+        <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="571dp">
+            <RelativeLayout android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:id="@+id/header">
+                <ImageView android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:background="@drawable/bg_gradient"/>
+                <ImageView android:layout_width="110dp" android:layout_height="70dp"
+                           android:background="@drawable/app_logo"
+                           android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="371dp"
+            android:layout_below="@+id/header"
+            android:id="@+id/R1">
 
+             <RelativeLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                        android:id="@+id/R2">
+                 <ImageView
+                         android:layout_width="20dp"
+                         android:id="@+id/settingsImg"
+                         android:layout_height="20dp"
+                         android:minWidth="0dp"
+                         android:minHeight="0dp"
+                         android:background="@drawable/home"
+                         android:layout_marginLeft="40dp"
+                         android:layout_marginTop="30dp"
+
+
+                 />
+
+                 <TextView
+                         android:layout_width="match_parent"
+                         android:id="@+id/settingsText"
+                         android:layout_height="wrap_content"
+                         android:text="Home"
+                         android:textSize="20sp"
+                         android:textStyle="bold"
+                         android:layout_toRightOf="@+id/settingsImg"
+                 android:layout_marginTop="27dp"
+                 android:layout_marginLeft="25dp"/>
+                         <!--android:padding="65sp"-->
+                         <!--android:layout_marginLeft="50dp"-->
+
+                 <View
+                         android:layout_width="match_parent"
+                         android:layout_height="3dp"
+                         android:background="#eeeeee"
+                         android:layout_marginRight="17dp"
+                         android:layout_marginLeft="17dp"
+                         android:layout_below="@+id/settingsText"
+                         android:layout_marginTop="2dp"
+                 />
+
+
+             </RelativeLayout>
+
+
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/R3"
+                android:layout_below="@+id/R2">
+                    <ImageView
+                            android:layout_width="20dp"
+                            android:id="@+id/settingsImg1"
+                            android:layout_height="20dp"
+                            android:background="@drawable/add_reminder"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginTop="30dp"
+
+
+                    />
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:id="@+id/settingsText2"
+                            android:layout_height="wrap_content"
+                            android:text="Reminder"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:layout_toRightOf="@+id/settingsImg1"
+                            android:layout_marginTop="27dp"
+                            android:layout_marginLeft="25dp"/>
+                    <!--android:padding="65sp"-->
+                    <!--android:layout_marginLeft="50dp"-->
+
+                    <View
+                            android:layout_width="match_parent"
+                            android:layout_height="3dp"
+                            android:background="#eeeeee"
+                            android:layout_marginRight="17dp"
+                            android:layout_marginLeft="17dp"
+                            android:layout_below="@+id/settingsText2"
+                            android:layout_marginTop="2dp"
+                    />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/R4"
+                android:layout_below="@+id/R3">
+                    <ImageView
+                            android:layout_width="20dp"
+                            android:id="@+id/settingsImg3"
+                            android:layout_height="20dp"
+                            android:background="@drawable/navigation_settings"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginTop="30dp"
+
+
+                    />
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:id="@+id/settingsText3"
+                            android:layout_height="wrap_content"
+                            android:text="Settings"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:layout_toRightOf="@+id/settingsImg3"
+                            android:layout_marginTop="27dp"
+                            android:layout_marginLeft="25dp"/>
+                    <!--android:padding="65sp"-->
+                    <!--android:layout_marginLeft="50dp"-->
+
+                    <View
+                            android:layout_width="match_parent"
+                            android:layout_height="3dp"
+                            android:background="#eeeeee"
+                            android:layout_marginRight="17dp"
+                            android:layout_marginLeft="17dp"
+                            android:layout_below="@+id/settingsText3"
+                            android:layout_marginTop="2dp"
+                    />
+
+
+                </RelativeLayout>
+
+
+
+
+
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </android.support.design.widget.NavigationView>
+            
 </android.support.v4.widget.DrawerLayout>
